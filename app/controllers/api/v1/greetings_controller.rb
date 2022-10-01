@@ -2,7 +2,7 @@
 
 module Api
   module V1
-    class GreetingsController < ApplicationController # rubocop:todo Style/Documentation
+    class GreetingsController < ApplicationController
       def index
         id = rand(1..Greeting.count)
         if id.nil?
